@@ -33,6 +33,7 @@ async function generateFrontPageData() {
     data1.price.regularMarketPrice,
     data1.price.regularMarketChange,
     data1.price.regularMarketChangePercent,
+    data1.price.symbol,
   ];
   var data2 = await yahooFinance.quoteSummary(
     trend.quotes[1].symbol,
@@ -43,6 +44,7 @@ async function generateFrontPageData() {
     data2.price.regularMarketPrice,
     data2.price.regularMarketChange,
     data2.price.regularMarketChangePercent,
+    data2.price.symbol,
   ];
   var data3 = await yahooFinance.quoteSummary(
     trend.quotes[2].symbol,
@@ -53,6 +55,7 @@ async function generateFrontPageData() {
     data3.price.regularMarketPrice,
     data3.price.regularMarketChange,
     data3.price.regularMarketChangePercent,
+    data3.price.symbol,
   ];
   var data4 = await yahooFinance.quoteSummary(
     trend.quotes[3].symbol,
@@ -63,6 +66,7 @@ async function generateFrontPageData() {
     data4.price.regularMarketPrice,
     data4.price.regularMarketChange,
     data4.price.regularMarketChangePercent,
+    data4.price.symbol,
   ];
   var data5 = await yahooFinance.quoteSummary(
     trend.quotes[4].symbol,
@@ -73,6 +77,7 @@ async function generateFrontPageData() {
     data5.price.regularMarketPrice,
     data5.price.regularMarketChange,
     data5.price.regularMarketChangePercent,
+    data5.price.symbol,
   ];
   var data6 = await yahooFinance.quoteSummary(
     trend.quotes[5].symbol,
@@ -83,6 +88,7 @@ async function generateFrontPageData() {
     data6.price.regularMarketPrice,
     data6.price.regularMarketChange,
     data6.price.regularMarketChangePercent,
+    data6.price.symbol,
   ];
   return [data1, data2, data3, data4, data5, data6];
 }
